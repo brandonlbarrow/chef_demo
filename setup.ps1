@@ -1,7 +1,11 @@
-choco install virtualbox vagrant cyg-get
+Write-Output "You will need to restart you computer after you install the chocolatey packages. Afterwards, re-run this script."
+
+choco install virtualbox vagrant cyg-get virtualbox.extensionpack
 
 refreshenv # this is to load the new PATH variable with vagrant
 
+
+vagrant plugin install vagrant-vbguest
 vagrant destroy -f
 vagrant up
 
