@@ -11,4 +11,4 @@ Install Chocolatey if you don't already have it:
 
 ```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
 
-Run powershell.exe -ExecutionPolicy Bypass setup.ps and when it finishes, open a browser to http://localhost:8080.
+Run ```powershell.exe -ExecutionPolicy Bypass setup.ps``` and when it finishes, open a browser to http://localhost:8080.
