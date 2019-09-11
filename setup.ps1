@@ -9,7 +9,7 @@ vagrant plugin install vagrant-vbguest
 vagrant destroy -f
 vagrant up
 
-if ( (Invoke-WebRequest 'localhost:8080').StatusCode == 200 ) {
+if ( (Invoke-WebRequest 'http://localhost:8080').StatusCode == 200 ) {
     Write-Output "=============COMPLETE==============="
     Write-Output "Go to http://localhost:8080 in a browser to see the result"
 }
