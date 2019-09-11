@@ -11,7 +11,7 @@ fi
 vagrant destroy -f
 vagrant up
 
-if ( $(curl -s -o /dev/null -w "%{http_code}" localhost:8080) =~ "*200*"); then
+if [[ $(curl -s -o /dev/null -w "%{http_code}" localhost:8080) == '200' ]]; then
     echo "=============COMPLETE==============="
     echo "Go to http://localhost:8080 in a browser to see the result."
 fi
